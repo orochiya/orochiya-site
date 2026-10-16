@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大蛇屋 San-in Reptiles｜米子の爬虫類専門店・冷凍マウス販売</title>
+<meta name="description" content="鳥取県米子市西倉吉町の爬虫類専門店・大蛇屋 San-in Reptiles。店主が選んだ爬虫類生体と、1匹から買える冷凍マウスを販売しています。">
+<link rel="canonical" href="https://orochiya.jp/">
+<meta property="og:title" content="大蛇屋 San-in Reptiles｜米子の爬虫類専門店">
+<meta property="og:description" content="鳥取県米子市西倉吉町の爬虫類専門店。厳選した生体と1匹から買える冷凍マウス。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orochiya.jp/">
+<meta property="og:image" content="https://orochiya.jp/orochiya-exterior.jpeg">
+<style>
+:root{
+  --bg:#0c0f0f; --bg2:#141918; --card:#1a201f; --line:#2a3331;
+  --text:#ecf2f1; --muted:#9fb0ad; --accent:#3fd9c9; --accent-dark:#0f6e66;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+header{position:sticky;top:0;z-index:10;background:rgba(12,15,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.brand{color:var(--text);text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.brand small{display:block;font-size:10px;color:var(--accent);letter-spacing:.18em;font-weight:500;line-height:1}
+.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14px}
+.nav ul a{color:var(--muted);text-decoration:none}
+.nav ul a:hover{color:var(--accent)}
+@media (max-width:600px){.nav ul{gap:12px;font-size:13px}.brand small{display:none}}
+
+.hero{padding:88px 0 72px;background:
+  radial-gradient(ellipse at 80% 20%,rgba(63,217,201,.16),transparent 55%),
+  linear-gradient(180deg,var(--bg2),var(--bg))}
+.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.24em;font-weight:600;margin:0 0 14px}
+.hero h1{font-size:clamp(26px,5.4vw,44px);line-height:1.4;margin:0 0 20px;font-weight:700}
+.hero p{color:var(--muted);max-width:620px;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--accent);color:#06211e}
+.btn.ghost{border:1px solid var(--accent);color:var(--accent)}
+
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(22px,4vw,30px);margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 32px;max-width:680px}
+h3{font-size:16px;color:var(--accent);letter-spacing:.08em;margin:32px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+
+.price-list{list-style:none;margin:0;padding:0}
+.price-list li{display:flex;justify-content:space-between;gap:16px;padding:12px 2px;border-bottom:1px dashed var(--line)}
+.price-list .name{flex:1}
+.price-list .price{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--muted);margin-top:20px}
+
+.feeders{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.feeder{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;text-align:center}
+.feeder .size{color:var(--muted);font-size:14px}
+.feeder .yen{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums}
+.feeder .yen span{font-size:13px;font-weight:500;color:var(--muted);margin-left:2px}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.service{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px}
+.service h4{margin:0 0 10px;font-size:18px}
+.service p{margin:0;color:var(--muted);font-size:15px}
+.service .num{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.12em}
+
+.shop{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+@media (max-width:760px){.shop{grid-template-columns:1fr}}
+.shop figure{margin:0}
+.shop img{border-radius:8px;border:1px solid var(--line)}
+.shop figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+dl.info{margin:0;display:grid;grid-template-columns:7.5em 1fr;gap:10px 16px;font-size:15px}
+dl.info dt{color:var(--muted)}
+dl.info dd{margin:0}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;gap:12px}
+.hours b{display:inline-block;min-width:4.5em}
+.reg{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px;font-size:13px}
+.reg p{margin:0 0 8px;font-weight:600}
+.reg dl{display:grid;grid-template-columns:9em 1fr;gap:4px 12px;margin:0}
+.reg dt{color:var(--muted)}
+.reg dd{margin:0}
+
+footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+footer a{color:var(--text);text-decoration:none;font-weight:600}
+</style>
+</head>
+<body id="top">
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">大蛇屋<small>SAN-IN REPTILES</small></a>
+    <ul>
+      <li><a href="#animals">生体</a></li>
+      <li><a href="#feeders">冷凍餌</a></li>
+      <li><a href="#services">サービス</a></li>
+      <li><a href="#shop">店舗案内</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">YONAGO REPTILE SPECIALTY STORE</p>
+      <h1>店主が選び抜いた爬虫類と、<br>飼育を支える地域の拠点。</h1>
+      <p>大量に並べることはせず、状態・体格・給餌の安定を見て個体を厳選しています。冷凍餌は1匹から購入できます。</p>
+      <div class="btns">
+        <a class="btn primary" href="#feeders">冷凍餌の価格を見る</a>
+        <a class="btn ghost" href="#shop">営業日時を見る</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="animals">
+    <div class="wrap">
+      <p class="eyebrow">SELECTED ANIMALS</p>
+      <h2>生体</h2>
+      <p class="lead">体調・体格・発色・給餌状態・入手経路を確認してから仕入れています。飼育を始めてからの相談にも対応します。表示価格は税込です。最新の販売状況はInstagramで確認できます。</p>
+
+      <h3>ヘビ</h3>
+      <ul class="price-list">
+        <li><span class="name">ボールパイソン／モハベ</span><span class="price">14,000円</span></li>
+        <li><span class="name">ボールパイソン／ブルーアイリューシスティック</span><span class="price">120,000円</span></li>
+        <li><span class="name">ボールパイソン／アルビノ・ブラックパステル</span><span class="price">100,000円</span></li>
+        <li><span class="name">ボールパイソン／ファイアフライ・OD・エンチ poss YB</span><span class="price">28,000円</span></li>
+        <li><span class="name">ボールパイソン／ファイアフライ・OD・スパイダー poss YB</span><span class="price">68,000円</span></li>
+        <li><span class="name">メキシカンブラックキングスネーク</span><span class="price">39,800円</span></li>
+        <li><span class="name">イエローアナコンダ CBベビー／オス</span><span class="price">110,000円</span></li>
+        <li><span class="name">イエローアナコンダ CBベビー／メス</span><span class="price">120,000円</span></li>
+      </ul>
+
+      <h3>トカゲ</h3>
+      <ul class="price-list">
+        <li><span class="name">グリーンイグアナ／アルビノ</span><span class="price">88,000円</span></li>
+        <li><span class="name">グリーンイグアナ／レッド hetアルビノ</span><span class="price">29,800円</span></li>
+        <li><span class="name">バナナスパイニーテールイグアナ</span><span class="price">158,000円</span></li>
+        <li><span class="name">B&amp;Wテグー</span><span class="price">68,000円</span></li>
+        <li><span class="name">サンセット・キタアオジタトカゲ</span><span class="price">83,000円</span></li>
+        <li><span class="name">ケイアオジタトカゲ</span><span class="price">63,000円</span></li>
+        <li><span class="name">エジプトトゲオアガマ／オス</span><span class="price">33,000円</span></li>
+        <li><span class="name">エジプトトゲオアガマ／メス</span><span class="price">33,000円</span></li>
+      </ul>
+
+      <h3>ヤモリ</h3>
+      <ul class="price-list">
+        <li><span class="name">レオパードゲッコー／ベルエニグマ</span><span class="price">13,000円</span></li>
+      </ul>
+
+      <h3>リクガメ</h3>
+      <ul class="price-list">
+        <li><span class="name">ケヅメリクガメ</span><span class="price">14,000円</span></li>
+        <li><span class="name">ヒガシヘルマンリクガメ</span><span class="price">16,000円</span></li>
+      </ul>
+
+      <p class="note">生体の状態によっては、掲載中でも販売を見合わせる場合があります。</p>
+      <div class="btns" style="margin-top:20px">
+        <a class="btn ghost" href="https://www.instagram.com/orochiya00/" target="_blank" rel="noopener">Instagramで在庫・入荷情報を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="feeders">
+    <div class="wrap">
+      <p class="eyebrow">FROZEN FEEDERS</p>
+      <h2>冷凍マウス価格表</h2>
+      <p class="lead">すべて税込・1匹から販売しています。地域最安値を目指した価格です。在庫確認・取り置きはInstagramのDMからどうぞ。</p>
+      <div class="feeders">
+        <div class="feeder"><div class="size">ピンクS</div><div class="yen">50<span>円</span></div></div>
+        <div class="feeder"><div class="size">ピンクM</div><div class="yen">60<span>円</span></div></div>
+        <div class="feeder"><div class="size">ピンクL</div><div class="yen">70<span>円</span></div></div>
+        <div class="feeder"><div class="size">ファジー</div><div class="yen">100<span>円</span></div></div>
+        <div class="feeder"><div class="size">ホッパー</div><div class="yen">120<span>円</span></div></div>
+        <div class="feeder"><div class="size">アダルトM</div><div class="yen">150<span>円</span></div></div>
+        <div class="feeder"><div class="size">アダルトL</div><div class="yen">180<span>円</span></div></div>
+        <div class="feeder"><div class="size">リタイア</div><div class="yen">190<span>円</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">SERVICES</p>
+      <h2>サービス</h2>
+      <p class="lead">生体の販売以外にも、地域の飼育者の方をサポートしています。</p>
+      <div class="services">
+        <div class="service">
+          <div class="num">01</div>
+          <h4>県外店舗からの生体受取</h4>
+          <p>県外の爬虫類店で購入予定の生体を大蛇屋で受け取り、現物を確認したうえで対面で説明してお渡しします。購入手続きの前に、販売店と大蛇屋の両方へご相談ください。</p>
+        </div>
+        <div class="service">
+          <div class="num">02</div>
+          <h4>飼育が難しくなった生体の引取り</h4>
+          <p>原則無料でお引き取りします。種類・状態・飼育歴・入手経路を確認し、希少性や状態によっては買取をご提案する場合もあります。事前に種類と写真をお送りください。収容状況などにより、お受けできない場合があります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <div class="wrap">
+      <p class="eyebrow">SHOP INFORMATION</p>
+      <h2>店舗案内</h2>
+      <div class="shop">
+        <div>
+          <dl class="info">
+            <dt>店名</dt><dd>大蛇屋 San-in Reptiles</dd>
+            <dt>所在地</dt><dd>〒683-0816 鳥取県米子市西倉吉町2<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B3%A5%E5%8F%96%E7%9C%8C%E7%B1%B3%E5%AD%90%E5%B8%82%E8%A5%BF%E5%80%89%E5%90%89%E7%94%BA2" target="_blank" rel="noopener">Googleマップで見る</a></dd>
+            <dt>営業時間</dt>
+            <dd>
+              <ul class="hours">
+                <li><b>水・金・土</b>20:30〜24:00</li>
+                <li><b>日</b>13:00〜17:00</li>
+                <li><b>月・火・木</b>定休日</li>
+              </ul>
+            </dd>
+            <dt>取扱い</dt><dd>爬虫類生体、冷凍餌、飼育用品、飼育相談</dd>
+            <dt>お問い合わせ</dt><dd>Instagram <a href="https://www.instagram.com/orochiya00/" target="_blank" rel="noopener">@orochiya00</a></dd>
+          </dl>
+          <div class="reg">
+            <p>第一種動物取扱業者 登録表示</p>
+            <dl>
+              <dt>代表者</dt><dd>目次 龍登志</dd>
+              <dt>種別</dt><dd>販売</dd>
+              <dt>登録番号</dt><dd>鳥取県指令第20260092008号</dd>
+              <dt>登録年月日</dt><dd>令和3年7月7日</dd>
+              <dt>登録更新年月日</dt><dd>令和8年7月7日</dd>
+              <dt>有効期間の末日</dt><dd>令和13年7月6日</dd>
+              <dt>動物取扱責任者</dt><dd>目次 龍登志</dd>
+            </dl>
+          </div>
+        </div>
+        <figure>
+          <img src="orochiya-exterior.jpeg" alt="大蛇屋 San-in Reptilesの外観。ターコイズの外壁と黒い看板" width="1086" height="1448" loading="lazy">
+          <figcaption>ターコイズの外壁と黒い看板が目印です。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#top">大蛇屋 San-in Reptiles</a>
+    <div>© 2026 大蛇屋 San-in Reptiles</div>
+  </div>
+</footer>
+
+</body>
+</html>
