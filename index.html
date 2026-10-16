@@ -63,10 +63,13 @@ h3{font-size:16px;color:var(--accent);letter-spacing:.08em;margin:32px 0 12px;pa
 .feeder .yen span{font-size:13px;font-weight:500;color:var(--muted);margin-left:2px}
 
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.services.quad{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.services.quad{grid-template-columns:1fr}}
 .service{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px}
 .service h4{margin:0 0 10px;font-size:18px}
 .service p{margin:0;color:var(--muted);font-size:15px}
 .service .num{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.12em}
+.service .spec{margin-top:12px;font-size:13px;color:var(--text);opacity:.8}
 
 .shop{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
 @media (max-width:760px){.shop{grid-template-columns:1fr}}
@@ -186,34 +189,38 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
   <section id="levechi">
     <div class="wrap">
       <p class="eyebrow">LEVECHI ── 山陰エリア取扱店</p>
-      <h2>除菌・抗菌・消臭スプレー「LEVECHI」</h2>
-      <p class="lead">山陰エリアでは大蛇屋だけが取り扱う、除菌・抗菌・消臭スプレーです。爬虫類のケージまわりから、犬・猫のいるお部屋、日常のお掃除まで、用途に合わせて4種類から選べます。</p>
-      <div class="services">
+      <h2>除菌・消臭スプレー「LEVECHI」</h2>
+      <p class="lead">山陰エリアでは大蛇屋だけが取り扱う、天然ミネラル由来の除菌・消臭ミストです。爬虫類のケージまわり、犬・猫や小動物のお世話、毎日のお掃除まで、用途に合わせて4種類から選べます。</p>
+      <div class="services quad">
         <div class="service">
-          <div class="num">REPTILE</div>
+          <div class="num">REPTILE AIR MIST</div>
           <h4>爬虫類用</h4>
-          <p>【要確認：説明文】</p>
+          <p>ケージ・シェルター・床材・マットなど、爬虫類まわりのメンテナンス後に。ニオイを上から隠すのではなく、分解して消臭するタイプです。ヘビ・トカゲ・ヤモリ・カメ・カエルなどの飼育環境に。</p>
+          <p class="spec">300ml／天然ミネラル・純水・ゼオライト／弱酸性</p>
         </div>
         <div class="service">
-          <div class="num">DOG &amp; CAT</div>
-          <h4>犬猫用</h4>
-          <p>【要確認：説明文】</p>
+          <div class="num">ANIMAL AIR MIST</div>
+          <h4>犬・猫・小動物・鳥用</h4>
+          <p>トイレ・ケージ・ハウス・寝床・おもちゃなど、ペット用品の除菌・消臭に。犬・猫のほか、ハムスターやデグーなどの小動物、インコやフクロウなどの鳥類にも。</p>
+          <p class="spec">300ml／天然ミネラル・純水・ゼオライト／弱酸性</p>
         </div>
         <div class="service">
-          <div class="num">CLEAN</div>
-          <h4>クリーン</h4>
-          <p>【要確認：説明文】</p>
+          <div class="num">CLEAN AIR MIST</div>
+          <h4>クリーン（洗浄・除菌）</h4>
+          <p>汚れを浮かせて落とす洗浄力を持ったタイプ。ペット用品からお部屋・車まわりのお掃除に。無添加・無香料で、第三者機関で効果検証済みとメーカーが案内しています。</p>
+          <p class="spec">350ml／純水・海洋ミネラル・植物エキス／アルカリ性</p>
         </div>
         <div class="service">
-          <div class="num">FRESH</div>
-          <h4>フレッシュ</h4>
-          <p>【要確認：説明文】</p>
+          <div class="num">FLESH AIR MIST</div>
+          <h4>フレッシュ（生活空間用）</h4>
+          <p>リビング・キッチン・トイレ・靴・衣類・子どものおもちゃ・ペット用品まで、暮らしのあちこちに使える日常用のミストです。</p>
+          <p class="spec">300ml／ミネラル・純水／弱酸性</p>
         </div>
       </div>
       <ul class="price-list" style="margin-top:28px">
-        <li><span class="name">LEVECHI 各種（【要確認：容量】）</span><span class="price">2,490円【要確認：税込？】</span></li>
+        <li><span class="name">LEVECHI 各種（爬虫類用・犬猫用・フレッシュ 300ml／クリーン 350ml）</span><span class="price">各2,490円</span></li>
       </ul>
-      <p class="note">在庫状況・取り置きはInstagramのDMからお問い合わせください。</p>
+      <p class="note">価格は税込です。在庫状況・取り置きはInstagramのDMからお問い合わせください。<br>※すべてのニオイ・菌・ウイルスに効果があるわけではありません。ご使用前に製品の使用方法をご確認ください。</p>
     </div>
   </section>
 
