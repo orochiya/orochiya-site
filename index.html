@@ -88,6 +88,10 @@ dl.info dd{margin:0}
 .reg dt{color:var(--muted)}
 .reg dd{margin:0}
 
+.lev-head{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center;margin-bottom:32px}
+.lev-head .lead{margin:0}
+.lev-logo{width:220px;border-radius:12px;box-shadow:0 0 0 1px var(--line),0 8px 30px rgba(0,0,0,.45)}
+@media (max-width:640px){.lev-head{grid-template-columns:1fr;gap:20px}.lev-logo{width:180px;order:-1}}
 footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
 footer a{color:var(--text);text-decoration:none;font-weight:600}
 </style>
@@ -188,9 +192,14 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
 
   <section id="levechi">
     <div class="wrap">
-      <p class="eyebrow">LEVECHI ── 山陰エリア取扱店</p>
+      <div class="lev-head">
+        <div>
+          <p class="eyebrow">LEVECHI ── 山陰エリア取扱店</p>
       <h2>除菌・消臭スプレー「LEVECHI」</h2>
       <p class="lead">山陰エリアでは大蛇屋だけが取り扱う、天然ミネラル由来の除菌・消臭ミストです。爬虫類のケージまわり、犬・猫や小動物のお世話、毎日のお掃除まで、用途に合わせて4種類から選べます。</p>
+        </div>
+        <img class="lev-logo" src="levechi-reptile.jpg" alt="#LEVECHI Reptile air mist のパッケージラベル" width="900" height="804" loading="lazy">
+      </div>
       <div class="services quad">
         <div class="service">
           <div class="num">REPTILE AIR MIST</div>
