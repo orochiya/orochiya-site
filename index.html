@@ -91,14 +91,24 @@ dl.info dd{margin:0}
 .reg dt{color:var(--muted)}
 .reg dd{margin:0}
 
-#levechi{position:relative;overflow:hidden}
-#levechi::before{content:"#LEVECHI";position:absolute;right:-24px;top:10px;
-  font-family:"Anton",Impact,"Arial Narrow",sans-serif;font-size:clamp(96px,17vw,230px);line-height:1;
-  color:#f5e000;opacity:.16;letter-spacing:.01em;white-space:nowrap;pointer-events:none;z-index:0}
+#levechi{position:relative;overflow:hidden;padding-top:210px}
+#levechi::before{content:"#LEVECHI";position:absolute;left:50%;transform:translateX(-50%);top:28px;
+  font-family:"Anton",Impact,"Arial Narrow",sans-serif;font-size:180px;line-height:1;
+  color:#f5e000;opacity:.32;letter-spacing:.01em;white-space:nowrap;pointer-events:none;z-index:0}
 #levechi .wrap{position:relative;z-index:1}
-@media (max-width:640px){#levechi::before{top:24px;right:-16px;font-size:110px;opacity:.15}}
+@media (max-width:640px){#levechi{padding-top:128px}#levechi::before{top:28px;font-size:96px;opacity:.30}}
 .lev-head{margin-bottom:32px}
 .lev-head .lead{margin:0}
+.lev-data{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px}
+.lev-data h3{margin-top:0}
+.lev-data table{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px}
+.lev-data th,.lev-data td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+.lev-data th:first-child,.lev-data td:first-child{text-align:left}
+.lev-data th{color:var(--muted);font-weight:500}
+.lev-data td:last-child{color:var(--accent);font-weight:700}
+.lev-data p{margin:6px 0;font-size:14px}
+@media (max-width:640px){.lev-data{padding:18px 14px}.lev-data table{font-size:13px}.lev-data th,.lev-data td{padding:8px 3px;white-space:nowrap}.lev-data td:first-child{white-space:normal}}
+.lev-data .src{color:var(--muted);font-size:12px;margin-top:14px}
 footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
 footer a{color:var(--text);text-decoration:none;font-weight:600}
 </style>
@@ -231,6 +241,22 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
           <p>リビング・キッチン・トイレ・靴・衣類・子どものおもちゃ・ペット用品まで、暮らしのあちこちに使える日常用のミストです。</p>
           <p class="spec">300ml／ミネラル・純水／弱酸性</p>
         </div>
+      </div>
+      <div class="lev-data">
+        <h3>メーカー公表の試験結果</h3>
+        <table>
+          <thead><tr><th>菌の種類</th><th>試験前</th><th>試験後</th><th>除去率</th></tr></thead>
+          <tbody>
+            <tr><td>大腸菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
+            <tr><td>黄色ブドウ球菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
+            <tr><td>サルモネラ菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
+            <tr><td>MRSA</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
+            <tr><td>肺炎桿菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
+          </tbody>
+        </table>
+        <p><b>経口毒性試験</b>：LD50値 2,000mg/kg以上</p>
+        <p><b>試験機関</b>：一般財団法人日本紡績検査協会／一般財団法人ボーケン品質評価機構／一般財団法人日本化学繊維検査協会／一般財団法人日本食品分析センター</p>
+        <p class="src">出典：LEVECHI公式Instagram「商品説明・使用用途・効果」（2024年6月2日掲載）。数値はメーカー公表の試験結果で、使用環境によって効果は異なります。</p>
       </div>
       <ul class="price-list" style="margin-top:28px">
         <li><span class="name">LEVECHI 各種（爬虫類用・犬猫用・フレッシュ 300ml／クリーン 350ml）</span><span class="price">各2,490円</span></li>
