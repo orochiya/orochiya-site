@@ -11,6 +11,9 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://orochiya.jp/">
 <meta property="og:image" content="https://orochiya.jp/orochiya-exterior.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap&text=%23LEVECHI" rel="stylesheet">
 <style>
 :root{
   --bg:#0c0f0f; --bg2:#141918; --card:#1a201f; --line:#2a3331;
@@ -88,6 +91,12 @@ dl.info dd{margin:0}
 .reg dt{color:var(--muted)}
 .reg dd{margin:0}
 
+#levechi{position:relative;overflow:hidden}
+#levechi::before{content:"#LEVECHI";position:absolute;right:-24px;top:10px;
+  font-family:"Anton",Impact,"Arial Narrow",sans-serif;font-size:clamp(96px,17vw,230px);line-height:1;
+  color:#f5e000;opacity:.07;letter-spacing:.01em;white-space:nowrap;pointer-events:none;z-index:0}
+#levechi .wrap{position:relative;z-index:1}
+@media (max-width:640px){#levechi::before{top:250px;right:-16px;font-size:110px;opacity:.07}}
 .lev-head{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center;margin-bottom:32px}
 .lev-head .lead{margin:0}
 .lev-logo{width:220px;border-radius:12px;box-shadow:0 0 0 1px var(--line),0 8px 30px rgba(0,0,0,.45)}
