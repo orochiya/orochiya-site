@@ -1,0 +1,50 @@
+{
+  "_説明": "生体一覧のデータ。編集したら python3 tools/build_animals.py を実行して index.html と各カテゴリページを更新する。photos は img/animals/ のファイル名（先頭がメイン写真）。status は空=販売中、hold=商談中。",
+  "categories": [
+    {
+      "id": "snake",
+      "name": "ヘビ",
+      "cover": "ball-bel-1.jpg",
+      "animals": [
+        {"name": "ボールパイソン", "sub": "モハベ", "price": "14,000円", "photos": ["ball-mojave-1.jpg", "ball-mojave-2.jpg", "ball-mojave-3.jpg"]},
+        {"name": "ボールパイソン", "sub": "ブルーアイリューシスティック", "price": "120,000円", "photos": ["ball-bel-1.jpg", "ball-bel-2.jpg", "ball-bel-3.jpg"]},
+        {"name": "ボールパイソン", "sub": "アルビノ・ブラックパステル", "price": "100,000円", "photos": ["ball-albino-bp-1.jpg", "ball-albino-bp-2.jpg", "ball-albino-bp-3.jpg"]},
+        {"name": "ボールパイソン", "sub": "ファイアフライ・OD・エンチ poss YB", "price": "28,000円", "photos": ["ball-ff-od-enchi-1.jpg", "ball-ff-od-enchi-2.jpg", "ball-ff-od-enchi-3.jpg"]},
+        {"name": "ボールパイソン", "sub": "ファイアフライ・OD・スパイダー poss YB", "price": "68,000円", "photos": ["ball-ff-od-spider-1.jpg", "ball-ff-od-spider-2.jpg", "ball-ff-od-spider-3.jpg"]},
+        {"name": "メキシカンブラックキングスネーク", "sub": "", "price": "39,800円", "photos": ["mexican-black-king-1.jpg", "mexican-black-king-2.jpg", "mexican-black-king-3.jpg"]},
+        {"name": "イエローアナコンダ", "sub": "CBベビー", "price": ["オス 110,000円", "メス 120,000円"], "photos": ["anaconda-1.jpg", "anaconda-2.jpg"]}
+      ]
+    },
+    {
+      "id": "lizard",
+      "name": "トカゲ",
+      "cover": "iguana-albino-1.jpg",
+      "animals": [
+        {"name": "グリーンイグアナ", "sub": "アルビノ", "price": "88,000円", "photos": ["iguana-albino-1.jpg", "iguana-albino-2.jpg", "iguana-albino-3.jpg"]},
+        {"name": "グリーンイグアナ", "sub": "レッド hetアルビノ", "price": "29,800円", "photos": ["iguana-red-het-albino-1.jpg", "iguana-red-het-albino-2.jpg", "iguana-red-het-albino-3.jpg"]},
+        {"name": "バナナスパイニーテールイグアナ", "sub": "", "price": "158,000円", "photos": ["banana-spinytail-1.jpg", "banana-spinytail-2.jpg", "banana-spinytail-3.jpg"]},
+        {"name": "B&Wテグー", "sub": "", "price": "68,000円", "photos": ["bw-tegu-1.jpg", "bw-tegu-2.jpg", "bw-tegu-3.jpg"]},
+        {"name": "サンセット・キタアオジタトカゲ", "sub": "セレクト個体", "price": "83,000円", "photos": ["northern-bluetongue-1.jpg", "northern-bluetongue-2.jpg", "northern-bluetongue-3.jpg"]},
+        {"name": "ケイアオジタトカゲ", "sub": "", "price": "63,000円", "photos": ["kei-bluetongue-1.jpg", "kei-bluetongue-2.jpg", "kei-bluetongue-3.jpg"]},
+        {"name": "エジプトトゲオアガマ", "sub": "オス・メス", "price": "各33,000円", "photos": ["uromastyx-1.jpg", "uromastyx-2.jpg", "uromastyx-3.jpg"]}
+      ]
+    },
+    {
+      "id": "gecko",
+      "name": "ヤモリ",
+      "cover": "",
+      "animals": [
+        {"name": "レオパードゲッコー", "sub": "ベルエニグマ", "price": "13,000円", "photos": [], "status": "hold"}
+      ]
+    },
+    {
+      "id": "tortoise",
+      "name": "リクガメ",
+      "cover": "sulcata-1.jpg",
+      "animals": [
+        {"name": "ケヅメリクガメ", "sub": "", "price": "14,000円", "photos": ["sulcata-1.jpg", "sulcata-2.jpg", "sulcata-3.jpg"]},
+        {"name": "ヒガシヘルマンリクガメ", "sub": "", "price": "16,000円", "photos": ["hermann-1.jpg", "hermann-2.jpg", "hermann-3.jpg"]}
+      ]
+    }
+  ]
+}
