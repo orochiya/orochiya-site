@@ -57,6 +57,22 @@ h3{font-size:16px;color:var(--accent);letter-spacing:.08em;margin:32px 0 12px;pa
 .price-list li{display:flex;justify-content:space-between;gap:16px;padding:12px 2px;border-bottom:1px dashed var(--line)}
 .price-list .name{flex:1}
 .price-list .price{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.animals{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;list-style:none;margin:0;padding:0}
+@media (max-width:560px){.animals{grid-template-columns:repeat(2,1fr);gap:10px}}
+.animal{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.animal .main{aspect-ratio:1/1;width:100%;object-fit:cover;background:#000}
+.animal .thumbs{display:flex;gap:4px;padding:4px;background:#000}
+.animal .thumbs button{flex:1;padding:0;border:2px solid transparent;background:none;cursor:pointer;border-radius:3px;overflow:hidden;opacity:.6}
+.animal .thumbs button[aria-pressed="true"]{border-color:var(--accent);opacity:1}
+.animal .thumbs img{aspect-ratio:1/1;width:100%;object-fit:cover}
+.animal .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.animal .name{font-size:15px;font-weight:600;line-height:1.5}
+.animal .name small{display:block;color:var(--muted);font-size:12px;font-weight:500}
+.animal .price{margin-top:auto;font-weight:700;font-size:17px;font-variant-numeric:tabular-nums}
+.animal .price span{display:block;font-size:13px;font-weight:600}
+@media (max-width:560px){.animal .body{padding:10px}.animal .name{font-size:13px}.animal .price{font-size:15px}}
+.animal.hold{opacity:.75}
+.animal .tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:3px;background:var(--accent-dark);color:var(--text)}
 .note{font-size:13px;color:var(--muted);margin-top:20px}
 
 .feeders{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
@@ -148,38 +164,102 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
       <p class="lead">体調・体格・発色・給餌状態・入手経路を確認してから仕入れています。飼育を始めてからの相談にも対応します。表示価格は税込です。最新の販売状況はInstagramで確認できます。</p>
 
       <h3>ヘビ</h3>
-      <ul class="price-list">
-        <li><span class="name">ボールパイソン／モハベ</span><span class="price">14,000円</span></li>
-        <li><span class="name">ボールパイソン／ブルーアイリューシスティック</span><span class="price">120,000円</span></li>
-        <li><span class="name">ボールパイソン／アルビノ・ブラックパステル</span><span class="price">100,000円</span></li>
-        <li><span class="name">ボールパイソン／ファイアフライ・OD・エンチ poss YB</span><span class="price">28,000円</span></li>
-        <li><span class="name">ボールパイソン／ファイアフライ・OD・スパイダー poss YB</span><span class="price">68,000円</span></li>
-        <li><span class="name">メキシカンブラックキングスネーク</span><span class="price">39,800円</span></li>
-        <li><span class="name">イエローアナコンダ CBベビー／オス</span><span class="price">110,000円</span></li>
-        <li><span class="name">イエローアナコンダ CBベビー／メス</span><span class="price">120,000円</span></li>
+      <ul class="animals">
+        <li class="animal">
+          <img class="main" src="img/animals/ball-mojave-1.jpg" alt="ボールパイソン モハベ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/ball-mojave-1.jpg"><img src="img/animals/ball-mojave-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/ball-mojave-2.jpg"><img src="img/animals/ball-mojave-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/ball-mojave-3.jpg"><img src="img/animals/ball-mojave-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ボールパイソン<small>モハベ</small></div><div class="price">14,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/ball-bel-1.jpg" alt="ボールパイソン ブルーアイリューシスティック" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/ball-bel-1.jpg"><img src="img/animals/ball-bel-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/ball-bel-2.jpg"><img src="img/animals/ball-bel-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/ball-bel-3.jpg"><img src="img/animals/ball-bel-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ボールパイソン<small>ブルーアイリューシスティック</small></div><div class="price">120,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/ball-albino-bp-1.jpg" alt="ボールパイソン アルビノ・ブラックパステル" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/ball-albino-bp-1.jpg"><img src="img/animals/ball-albino-bp-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/ball-albino-bp-2.jpg"><img src="img/animals/ball-albino-bp-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/ball-albino-bp-3.jpg"><img src="img/animals/ball-albino-bp-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ボールパイソン<small>アルビノ・ブラックパステル</small></div><div class="price">100,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/ball-ff-od-enchi-1.jpg" alt="ボールパイソン ファイアフライ・OD・エンチ poss YB" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/ball-ff-od-enchi-1.jpg"><img src="img/animals/ball-ff-od-enchi-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/ball-ff-od-enchi-2.jpg"><img src="img/animals/ball-ff-od-enchi-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/ball-ff-od-enchi-3.jpg"><img src="img/animals/ball-ff-od-enchi-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ボールパイソン<small>ファイアフライ・OD・エンチ poss YB</small></div><div class="price">28,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/ball-ff-od-spider-1.jpg" alt="ボールパイソン ファイアフライ・OD・スパイダー poss YB" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/ball-ff-od-spider-1.jpg"><img src="img/animals/ball-ff-od-spider-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/ball-ff-od-spider-2.jpg"><img src="img/animals/ball-ff-od-spider-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/ball-ff-od-spider-3.jpg"><img src="img/animals/ball-ff-od-spider-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ボールパイソン<small>ファイアフライ・OD・スパイダー poss YB</small></div><div class="price">68,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/mexican-black-king-1.jpg" alt="メキシカンブラックキングスネーク" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/mexican-black-king-1.jpg"><img src="img/animals/mexican-black-king-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/mexican-black-king-2.jpg"><img src="img/animals/mexican-black-king-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/mexican-black-king-3.jpg"><img src="img/animals/mexican-black-king-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">メキシカンブラックキングスネーク</div><div class="price">39,800円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/anaconda-1.jpg" alt="イエローアナコンダ CBベビー" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/anaconda-1.jpg"><img src="img/animals/anaconda-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/anaconda-2.jpg"><img src="img/animals/anaconda-2.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">イエローアナコンダ<small>CBベビー</small></div><div class="price"><span>オス 110,000円</span><span>メス 120,000円</span></div></div>
+        </li>
       </ul>
 
       <h3>トカゲ</h3>
-      <ul class="price-list">
-        <li><span class="name">グリーンイグアナ／アルビノ</span><span class="price">88,000円</span></li>
-        <li><span class="name">グリーンイグアナ／レッド hetアルビノ</span><span class="price">29,800円</span></li>
-        <li><span class="name">バナナスパイニーテールイグアナ</span><span class="price">158,000円</span></li>
-        <li><span class="name">B&amp;Wテグー</span><span class="price">68,000円</span></li>
-        <li><span class="name">サンセット・キタアオジタトカゲ</span><span class="price">83,000円</span></li>
-        <li><span class="name">ケイアオジタトカゲ</span><span class="price">63,000円</span></li>
-        <li><span class="name">エジプトトゲオアガマ／オス</span><span class="price">33,000円</span></li>
-        <li><span class="name">エジプトトゲオアガマ／メス</span><span class="price">33,000円</span></li>
+      <ul class="animals">
+        <li class="animal">
+          <img class="main" src="img/animals/iguana-albino-1.jpg" alt="グリーンイグアナ アルビノ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/iguana-albino-1.jpg"><img src="img/animals/iguana-albino-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/iguana-albino-2.jpg"><img src="img/animals/iguana-albino-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/iguana-albino-3.jpg"><img src="img/animals/iguana-albino-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">グリーンイグアナ<small>アルビノ</small></div><div class="price">88,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/iguana-red-het-albino-1.jpg" alt="グリーンイグアナ レッド hetアルビノ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/iguana-red-het-albino-1.jpg"><img src="img/animals/iguana-red-het-albino-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/iguana-red-het-albino-2.jpg"><img src="img/animals/iguana-red-het-albino-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/iguana-red-het-albino-3.jpg"><img src="img/animals/iguana-red-het-albino-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">グリーンイグアナ<small>レッド hetアルビノ</small></div><div class="price">29,800円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/banana-spinytail-1.jpg" alt="バナナスパイニーテールイグアナ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/banana-spinytail-1.jpg"><img src="img/animals/banana-spinytail-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/banana-spinytail-2.jpg"><img src="img/animals/banana-spinytail-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/banana-spinytail-3.jpg"><img src="img/animals/banana-spinytail-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">バナナスパイニーテールイグアナ</div><div class="price">158,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/bw-tegu-1.jpg" alt="B&amp;Wテグー" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/bw-tegu-1.jpg"><img src="img/animals/bw-tegu-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/bw-tegu-2.jpg"><img src="img/animals/bw-tegu-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/bw-tegu-3.jpg"><img src="img/animals/bw-tegu-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">B&amp;Wテグー</div><div class="price">68,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/northern-bluetongue-1.jpg" alt="サンセット・キタアオジタトカゲ セレクト個体" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/northern-bluetongue-1.jpg"><img src="img/animals/northern-bluetongue-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/northern-bluetongue-2.jpg"><img src="img/animals/northern-bluetongue-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/northern-bluetongue-3.jpg"><img src="img/animals/northern-bluetongue-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">サンセット・キタアオジタトカゲ<small>セレクト個体</small></div><div class="price">83,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/kei-bluetongue-1.jpg" alt="ケイアオジタトカゲ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/kei-bluetongue-1.jpg"><img src="img/animals/kei-bluetongue-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/kei-bluetongue-2.jpg"><img src="img/animals/kei-bluetongue-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/kei-bluetongue-3.jpg"><img src="img/animals/kei-bluetongue-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ケイアオジタトカゲ</div><div class="price">63,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/uromastyx-1.jpg" alt="エジプトトゲオアガマ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/uromastyx-1.jpg"><img src="img/animals/uromastyx-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/uromastyx-2.jpg"><img src="img/animals/uromastyx-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/uromastyx-3.jpg"><img src="img/animals/uromastyx-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">エジプトトゲオアガマ<small>オス・メス</small></div><div class="price">各33,000円</div></div>
+        </li>
       </ul>
 
       <h3>ヤモリ</h3>
-      <ul class="price-list">
-        <li><span class="name">レオパードゲッコー／ベルエニグマ</span><span class="price">13,000円</span></li>
+      <ul class="animals">
+        <li class="animal hold">
+          <div class="body"><span class="tag">商談中</span><div class="name">レオパードゲッコー<small>ベルエニグマ</small></div><div class="price">13,000円</div></div>
+        </li>
       </ul>
 
       <h3>リクガメ</h3>
-      <ul class="price-list">
-        <li><span class="name">ケヅメリクガメ</span><span class="price">14,000円</span></li>
-        <li><span class="name">ヒガシヘルマンリクガメ</span><span class="price">16,000円</span></li>
+      <ul class="animals">
+        <li class="animal">
+          <img class="main" src="img/animals/sulcata-1.jpg" alt="ケヅメリクガメ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/sulcata-1.jpg"><img src="img/animals/sulcata-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/sulcata-2.jpg"><img src="img/animals/sulcata-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/sulcata-3.jpg"><img src="img/animals/sulcata-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ケヅメリクガメ</div><div class="price">14,000円</div></div>
+        </li>
+        <li class="animal">
+          <img class="main" src="img/animals/hermann-1.jpg" alt="ヒガシヘルマンリクガメ" loading="lazy" width="600" height="600">
+          <div class="thumbs"><button type="button" aria-pressed="true" aria-label="写真1" data-src="img/animals/hermann-1.jpg"><img src="img/animals/hermann-1.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真2" data-src="img/animals/hermann-2.jpg"><img src="img/animals/hermann-2.jpg" alt="" loading="lazy" width="80" height="80"></button><button type="button" aria-pressed="false" aria-label="写真3" data-src="img/animals/hermann-3.jpg"><img src="img/animals/hermann-3.jpg" alt="" loading="lazy" width="80" height="80"></button></div>
+          <div class="body"><div class="name">ヒガシヘルマンリクガメ</div><div class="price">16,000円</div></div>
+        </li>
       </ul>
 
       <p class="note">生体の状態によっては、掲載中でも販売を見合わせる場合があります。</p>
@@ -336,5 +416,16 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.animal').forEach(function(c){
+  var m=c.querySelector('.main');if(!m)return;
+  c.querySelectorAll('.thumbs button').forEach(function(b){
+    b.addEventListener('click',function(){
+      m.src=b.dataset.src;
+      c.querySelectorAll('.thumbs button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    });
+  });
+});
+</script>
 </body>
 </html>
