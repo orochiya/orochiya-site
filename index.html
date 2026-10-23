@@ -132,6 +132,10 @@ dl.info dd{margin:0}
   color:#f5e000;opacity:1;letter-spacing:.01em;white-space:nowrap;pointer-events:none;z-index:0}
 #levechi .wrap{position:relative;z-index:1}
 @media (max-width:640px){#levechi{padding-top:128px}#levechi::before{top:28px;font-size:22vw;opacity:1}}
+.lev-types{list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.lev-types li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 10px;text-align:center;font-weight:600;font-size:15px;line-height:1.5}
+.lev-types small{display:block;color:var(--muted);font-size:12px;font-weight:500;margin-top:2px}
+@media (max-width:640px){.lev-types{grid-template-columns:repeat(2,1fr)}.lev-types li{font-size:14px}}
 .lev-head{margin-bottom:32px}
 .lev-head .lead{margin:0}
 .lev-data{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px}
@@ -224,51 +228,18 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
       <p class="lead">山陰エリアでは大蛇屋だけが取り扱う、天然ミネラル由来の除菌・消臭ミストです。爬虫類のケージまわり、犬・猫や小動物のお世話、毎日のお掃除まで、用途に合わせて4種類から選べます。</p>
         </div>
       </div>
-      <div class="services quad">
-        <div class="service">
-          <div class="num">REPTILE AIR MIST</div>
-          <h4>爬虫類用</h4>
-          <p>ケージ・シェルター・床材・マットなど、爬虫類まわりのメンテナンス後に。ニオイを上から隠すのではなく、分解して消臭するタイプです。ヘビ・トカゲ・ヤモリ・カメ・カエルなどの飼育環境に。</p>
-          <p class="spec">300ml／天然ミネラル・純水・ゼオライト／弱酸性</p>
-        </div>
-        <div class="service">
-          <div class="num">ANIMAL AIR MIST</div>
-          <h4>犬・猫・小動物・鳥用</h4>
-          <p>トイレ・ケージ・ハウス・寝床・おもちゃなど、ペット用品の除菌・消臭に。犬・猫のほか、ハムスターやデグーなどの小動物、インコやフクロウなどの鳥類にも。</p>
-          <p class="spec">300ml／天然ミネラル・純水・ゼオライト／弱酸性</p>
-        </div>
-        <div class="service">
-          <div class="num">CLEAN AIR MIST</div>
-          <h4>クリーン（洗浄・除菌）</h4>
-          <p>汚れを浮かせて落とす洗浄力を持ったタイプ。ペット用品からお部屋・車まわりのお掃除に。無添加・無香料で、第三者機関で効果検証済みとメーカーが案内しています。</p>
-          <p class="spec">350ml／純水・海洋ミネラル・植物エキス／アルカリ性</p>
-        </div>
-        <div class="service">
-          <div class="num">FLESH AIR MIST</div>
-          <h4>フレッシュ（生活空間用）</h4>
-          <p>リビング・キッチン・トイレ・靴・衣類・子どものおもちゃ・ペット用品まで、暮らしのあちこちに使える日常用のミストです。</p>
-          <p class="spec">300ml／ミネラル・純水／弱酸性</p>
-        </div>
-      </div>
-      <div class="lev-data">
-        <h3>メーカー公表の試験結果</h3>
-        <table>
-          <thead><tr><th>菌の種類</th><th>試験前</th><th>試験後</th><th>除去率</th></tr></thead>
-          <tbody>
-            <tr><td>大腸菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
-            <tr><td>黄色ブドウ球菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
-            <tr><td>サルモネラ菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
-            <tr><td>MRSA</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
-            <tr><td>肺炎桿菌</td><td>10,000個</td><td>20個未満</td><td>99.9%</td></tr>
-          </tbody>
-        </table>
-        <p><b>経口毒性試験</b>：LD50値 2,000mg/kg以上</p>
-        <p><b>試験機関</b>：一般財団法人日本紡績検査協会／一般財団法人ボーケン品質評価機構／一般財団法人日本化学繊維検査協会／一般財団法人日本食品分析センター</p>
-        <p class="src">出典：LEVECHI公式Instagram「商品説明・使用用途・効果」（2024年6月2日掲載）。数値はメーカー公表の試験結果で、使用環境によって効果は異なります。</p>
-      </div>
-      <ul class="price-list" style="margin-top:28px">
+      <ul class="lev-types">
+        <li>爬虫類用<small>300ml</small></li>
+        <li>犬・猫・小動物・鳥用<small>300ml</small></li>
+        <li>クリーン<small>350ml</small></li>
+        <li>フレッシュ<small>300ml</small></li>
+      </ul>
+      <ul class="price-list">
         <li><span class="name">LEVECHI 各種（爬虫類用・犬猫用・フレッシュ 300ml／クリーン 350ml）</span><span class="price">各2,490円</span></li>
       </ul>
+      <div class="btns" style="margin-top:24px">
+        <a class="btn ghost" href="levechi.html">用途別の詳細・試験結果を見る</a>
+      </div>
       <p class="note">価格は税込です。在庫状況・取り置きはInstagramのDMからお問い合わせください。<br>※すべてのニオイ・菌・ウイルスに効果があるわけではありません。ご使用前に製品の使用方法をご確認ください。</p>
     </div>
   </section>
