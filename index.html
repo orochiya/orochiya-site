@@ -133,9 +133,11 @@ dl.info dd{margin:0}
 #levechi .wrap{position:relative;z-index:1}
 @media (max-width:640px){#levechi{padding-top:128px}#levechi::before{top:28px;font-size:22vw;opacity:1}}
 .lev-types{list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.lev-types li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 10px;text-align:center;font-weight:600;font-size:15px;line-height:1.5}
+.lev-types a{display:block;height:100%;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 10px;text-align:center;font-weight:600;font-size:15px;line-height:1.5;color:var(--text);text-decoration:none}
+.lev-types a:hover{border-color:var(--accent)}
+.lev-types a::after{content:"詳細 →";display:block;color:var(--accent);font-size:12px;font-weight:600;margin-top:4px}
 .lev-types small{display:block;color:var(--muted);font-size:12px;font-weight:500;margin-top:2px}
-@media (max-width:640px){.lev-types{grid-template-columns:repeat(2,1fr)}.lev-types li{font-size:14px}}
+@media (max-width:640px){.lev-types{grid-template-columns:repeat(2,1fr)}.lev-types a{font-size:14px}}
 .lev-head{margin-bottom:32px}
 .lev-head .lead{margin:0}
 .lev-data{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px}
@@ -229,10 +231,10 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
         </div>
       </div>
       <ul class="lev-types">
-        <li>爬虫類用<small>300ml</small></li>
-        <li>犬・猫・小動物・鳥用<small>300ml</small></li>
-        <li>クリーン<small>350ml</small></li>
-        <li>フレッシュ<small>300ml</small></li>
+        <li><a href="levechi.html#lev-reptile">爬虫類用<small>300ml</small></a></li>
+        <li><a href="levechi.html#lev-animal">犬・猫・小動物・鳥用<small>300ml</small></a></li>
+        <li><a href="levechi.html#lev-clean">クリーン<small>350ml</small></a></li>
+        <li><a href="levechi.html#lev-fresh">フレッシュ<small>300ml</small></a></li>
       </ul>
       <ul class="price-list">
         <li><span class="name">LEVECHI 各種（爬虫類用・犬猫用・フレッシュ 300ml／クリーン 350ml）</span><span class="price">各2,490円</span></li>

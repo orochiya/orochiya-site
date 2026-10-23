@@ -108,6 +108,7 @@ h3{font-size:16px;color:var(--accent);letter-spacing:.08em;margin:32px 0 12px;pa
 .service p{margin:0;color:var(--muted);font-size:15px}
 .service .num{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.12em}
 .service .spec{margin-top:12px;font-size:13px;color:var(--text);opacity:.8}
+.service:target{border-color:var(--accent)}
 
 .shop{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
 @media (max-width:760px){.shop{grid-template-columns:1fr}}
@@ -176,25 +177,25 @@ footer a{color:var(--text);text-decoration:none;font-weight:600}
         </div>
       </div>
       <div class="services quad">
-        <div class="service">
+        <div class="service" id="lev-reptile">
           <div class="num">REPTILE AIR MIST</div>
           <h4>爬虫類用</h4>
           <p>ケージ・シェルター・床材・マットなど、爬虫類まわりのメンテナンス後に。ニオイを上から隠すのではなく、分解して消臭するタイプです。ヘビ・トカゲ・ヤモリ・カメ・カエルなどの飼育環境に。</p>
           <p class="spec">300ml／天然ミネラル・純水・ゼオライト／弱酸性</p>
         </div>
-        <div class="service">
+        <div class="service" id="lev-animal">
           <div class="num">ANIMAL AIR MIST</div>
           <h4>犬・猫・小動物・鳥用</h4>
           <p>トイレ・ケージ・ハウス・寝床・おもちゃなど、ペット用品の除菌・消臭に。犬・猫のほか、ハムスターやデグーなどの小動物、インコやフクロウなどの鳥類にも。</p>
           <p class="spec">300ml／天然ミネラル・純水・ゼオライト／弱酸性</p>
         </div>
-        <div class="service">
+        <div class="service" id="lev-clean">
           <div class="num">CLEAN AIR MIST</div>
           <h4>クリーン（洗浄・除菌）</h4>
           <p>汚れを浮かせて落とす洗浄力を持ったタイプ。ペット用品からお部屋・車まわりのお掃除に。無添加・無香料で、第三者機関で効果検証済みとメーカーが案内しています。</p>
           <p class="spec">350ml／純水・海洋ミネラル・植物エキス／アルカリ性</p>
         </div>
-        <div class="service">
+        <div class="service" id="lev-fresh">
           <div class="num">FLESH AIR MIST</div>
           <h4>フレッシュ（生活空間用）</h4>
           <p>リビング・キッチン・トイレ・靴・衣類・子どものおもちゃ・ペット用品まで、暮らしのあちこちに使える日常用のミストです。</p>
